@@ -1,0 +1,347 @@
+Разработчик на C#
+Станьте инженером-программистом C#.‍ Вы сможете написать игру, сайт, мобильное приложение или многопоточный сервис. Изучите основы этого универсального языка. На практике освоите алгоритмы и структуры данных, а также объектно-ориентированное программирование для С#. Получите практические навыки разработки веб-сервисов и приложений для работы, на которую вы сможете устроиться после 9 месяцев обучения.
+C# ASP.NET .NET SQL NoSQL JavaScript SOAP gRPC Git
+
+Чем предстоит заниматься: проектирование и разработка модулей системы (архитектура, логика, участие в создании интерфейсов, конечно само программирование): микросервисы для системы и самодостаточные программные продукты, работа с аппаратными устройствами.
+Техническое образование в области IT
+
+Опыт коммерческой разработки от 2х лет
+
+Опыт работы с базами данных и ORM-системами (EntityFramework)
+
+Опыт разработки клиент-серверных приложений на С# WPF
+
+Понимание смысла микросервисной архитектуры
+
+Понимание принципов ООП и платформы .Net
+
+Умение работать с системой контроля версий(Gitlab)
+
+Представление о работе с XML
+
+Знание классических алгоритмов и структур данных
+
+Опыт работы c СУБД (MS SQL, T-SQL) – будет являться преимуществом
+
+Понимание принципов SOLID и DDD.
+
+Знание и опыт работы с HTML/JavaScript – будет являться преимуществом
+
+NET и язык C# (кросс платформенная разработка)
+
+REST/SignalR
+
+Фронтенд на React JS
+
+Базы данных в PostgreSQL/SQLite
+
+Orm-система EntityFramework
+
+Система контроля версий Gitlab
+
+Контейнеризатор приложений Docker
+
+C#
+.NET Framework
+MS SQL
+HTML
+.NET
+JavaScript
+ООП
+WPF
+Работа с базами данных
+
+
+
+
+
+
+
+
+
+
+
+
+Python PyCharm GitLab pytest SQL MySQL PostgreSQL Docker Flask FastAPI HTML CSS
+
+
+VS Code Vitest Jest Vite Webpack Pinia Element Plus Eslint Sass Pixel Perfect Emmet Lighthouse HTML CSS GitLab GitHub Vue 3.0 React TypeScript JavaScript REST API Figma Chrome DevTools
+
+Linux Python Docker GitLab Molecule Karate Ansible Terraform Prometheus Grafana ELK
+
+
+Python Django Flask FastAPI HTML CSS PyCharm Docker Linux Kubernetes Git GitHub Google Colab Visual Studio Visual Studio Code SQL MySQL Oracle PostgreSQL JSON XML
+
+
+
+
+Swift Objective-C Swift Playgrounds Xcode Git GitHub Linux Docker SQL MySQL PostgreSQL
+
+Java Kotlin Android SDK JUnit Swift Objective-C iOS SDK JavaScript C++ CSQL  Git
+
+Java SQL NoSQL Allure Spring JUnit Selenium REST CI/CD X-Path JavaScript HTML/CSS Python
+
+Unreal Engine С++ GitLab
+
+Python Linux TCP/IP FHRP STP BGP OSPF
+
+1C SOAP HTTP XML JSON СКД
+
+
+C#
+Java
+Python
+JavaScript
+Scala
+Swift
+Perl
+Ruby
+Go
+Rust
+TypeScript
+Kotlin
+PHP
+C++
+C
+Objective-C
+Shell Scripting
+PowerShell
+Bash
+SQL
+PL/SQL
+T-SQL
+MySQL
+PostgreSQL
+MongoDB
+Oracle
+SQLite
+Firebase
+Django
+Flask
+Spring
+Laravel
+Ruby on Rails
+.NET
+Node.js
+Express.js
+Angular
+React
+Vue.js
+Ember.js
+Backbone.js
+Meteor.js
+Ionic
+React Native
+Flutter
+Xamarin
+SwiftUI
+Kotlin Multiplatform
+Dart
+Elm
+Crystal
+Julia
+R
+MATLAB
+Scilab
+Groovy
+Clojure
+Elixir
+Erlang
+Haskell
+Lua
+Perl
+Racket
+Python
+Java
+C#
+C++
+JavaScript
+TypeScript
+PHP
+Ruby
+Swift
+Kotlin
+Go
+Rust
+Scala
+Perl
+Shell Scripting
+SQL
+PL/SQL
+T-SQL
+PostgreSQL
+MySQL
+MongoDB
+Oracle Database
+Redis
+Lua
+Groovy
+R
+MATLAB
+Julia
+Rust
+Dart
+Elixir
+Erlang
+Haskell
+Lisp
+Prolog
+Racket
+Scheme
+Smalltalk
+Clojure
+F#
+Objective-C
+Ada
+ALGOL
+BASIC
+COBOL
+Fortran
+Pascal
+Prolog
+SML
+Ada
+.NET Framework
+.NET Core
+ASP.NET
+Angular
+React
+Vue.js
+Node.js
+Express.js
+Django
+Flask
+Ruby on Rails
+Laravel
+Symfony
+Spring Boot
+Hibernate
+JUnit
+Selenium
+JMeter
+Jenkins
+Docker
+Kubernetes
+Ansible
+Terraform
+AWS (Amazon Web Services)
+Google Cloud Platform
+Microsoft Azure
+Git
+Mercurial
+SVN
+TFS
+JIRA
+Confluence
+Slack
+Microsoft Teams
+Zoom
+Slack
+Trello
+Asana
+Jira
+Confluence
+Slack
+Microsoft Teams
+Zoom
+Slack
+Trello
+Asana
+Jira
+Confluence
+Slack
+Microsoft Teams
+.NET Framework
+.NET Core
+ASP.NET
+Angular
+React
+Vue.js
+Node.js
+Express.js
+Django
+Flask
+Ruby on Rails
+Laravel
+Symfony
+Spring Boot
+Hibernate
+JUnit
+Selenium
+JMeter
+Jenkins
+Docker
+Kubernetes
+Ansible
+Terraform
+AWS (Amazon Web Services)
+Google Cloud Platform
+Microsoft Azure
+Git
+Mercurial
+SVN
+TFS
+JIRA
+Confluence
+Slack
+Microsoft Teams
+Zoom
+Slack
+Trello
+Asana
+Jira
+Confluence
+Slack
+Microsoft Teams
+Zoom
+Slack
+Trello
+Asana
+Jira
+Confluence
+Slack
+Microsoft Teams
+
+for key in mydict_1.keys():
+    sim = labse_find_similar_words(labse_get_word_vector(key), mydict_1.keys())
+    for s in sim:
+        if key != s:
+            if key not in similar:
+               mydict_1[key] = sim
+               similar.append(s)
+               print(mydict_1[key],sim,key,s)
+    with open('dictionary_test.json', encoding='utf-8', mode='w') as filehandler:
+        json.dump(mydict_1, filehandler, ensure_ascii=False)
+
+for key in mydict_1.keys():
+    sim = find_similar_words(get_word_vector(key), mydict_1.keys())
+    for s in sim:
+        if key != s:
+            if key not in similar:
+               mydict_1[key] = sim
+               similar.append(s)
+               print(mydict_1[key],sim,key,s)
+    with open('dictionary.json', encoding='utf-8', mode='w') as filehandler:
+        json.dump(mydict_1, filehandler, ensure_ascii=False)
+
+
+        {"Java": ["java"], "SQL": ["SQL", "PL/SQL", "T-SQL"], "NoSQL": ["nosql"],
+         "Allure": ["allure"], "Spring": ["Spring", "Spring Boot"], "JUnit": ["junit"],
+          "Selenium": ["selenium"], "REST": ["rest"], "CI/CD": ["ci/cd"], "X-Path": ["x-path"],
+         "JavaScript": ["javascript"], "HTML/CSS": ["HTML/CSS", "HTML", "CSS"], "Python": ["python"],
+          "Go": ["go"], "Unit": ["unit"], "тесты": ["тесты", "Паттерны", "Функциональные тесты", "Сквозные тесты",
+         "Модульные тесты", "Unit-тесты", "Тест-аналитика", "Тест-кейсы", "Тест-планы"], "«code review»": ["«code review»"],
+         "Бэкенд": ["бэкенд"], "Golang": ["Golang", "Erlang"], "API": ["api"], "Нереляционными": ["Нереляционными", "Интеграционное тестирование",
+         "Составление проектной документации", "Привлечение инвестиций"], "«База данных»": ["«База данных»", "Потоки данных", "Визуализирует данные"],
+           "Redis": ["redis"], "Docker": ["docker"], "k8s": ["k8s"], "Git": ["git"], "NSQ": ["nsq"], "Apache Kafka": ["apache kafka"], "PostgreSQL": ["postgresql"],
+           "Aerospike": ["aerospike"], "": [""], "GPT-агентами": ["gpt-агентами"], "VK cloud": ["vk cloud"], "Lean Canvas": ["lean canvas"], "JTBD": ["jtbd"],
+            "Retention": ["retention"], "Figma": ["figma"], "CustDev": ["custdev"], "User Story": ["user story"], "Product Market Fit": ["product market fit"],
+             "Юнит-экономика": ["юнит-экономика"], "Ценностное предложение": ["Ценностное предложение", "Архитектура приложений и сервисов", "Ручное тестирование",
+              "Приемочное тестирование", "Нагрузочное тестирование", "Тестирование веб-приложений", "Ищет закономерности и ошибки в данных", "Контроль версий",
+               "Управление командой", "Составление проектной документации", "Жизненный цикл проекта", "Контролирует исполнение задач", "Просчет бизнес-моделей",
+                "Привлечение инвестиций", "Жизненный цикл продукта", "Анализирует рынок и ЦА", "Управляет жизненным циклом продукта"], "C++": ["c++"], "C": ["c"],
+                 "TCP/IP": ["tcp/ip"], "Linux": ["linux"], "Power BI": ["power bi"], "Tableau": ["tableau"], "Amplitude": ["amplitude"], "ANNs": ["anns"], "GAN": ["gan"],
+                  "Frontend": ["Frontend", "Backend"], "Fullstack": ["fullstack"],
+  "низкоуровневое": ["низкоуровневое", "высокоуровневое", "Фреймворк", "Ручное тестирование", "Автоматизированное тестирование", "Сквозные тесты", "Нагрузочное тестирование", "Игровой аналитик", "Продуктовый аналитик", "Маркетинговый аналитик", "Анализирует данные", "Визуализирует данные", "Тестирование гипотез", "Придумывает новый продукт", "Тестирует маркетинговые гипотезы"],
+   "для мобильных приложений": ["для мобильных приложений", "для десктоп-приложений", "для веб-приложений", "Архитектура приложений и сервисов", "Тестирование веб-приложений", "Проверяет работу сайтов и приложений", "Ищет закономерности и ошибки в данных", "Контроль версий", "Привлечение инвестиций"],
+    "для оборудования": ["для оборудования", "для веб-приложений", "Тестовая документация", "Предлагает улучшения на основе данных", "Основы программирования", "Веб-программирование"], "для умных устройств": ["для умных устройств", "Управляет финансовыми ресурсами"], "PHP": ["php"], "Алгоритмы": ["Алгоритмы", "Архитектура приложений и сервисов", "Игровой аналитик", "Продуктовый аналитик", "Маркетинговый аналитик", "Анализирует данные"], "Структуры данных": ["Паттерны", "Структуры данных", "Потоки данных", "Протоколы передачи данных", "Ручное тестирование", "Сквозные тесты", "Модульные тесты", "Тест-планы", "Анализирует данные", "Визуализирует данные", "Стандарты менеджмента"], "Виртуализация": ["Виртуализация", "Тестовая документация", "Выстраивает стратегии продвижения продукта"], "Чек-листы": ["чек-листы"], "Локализации дефектов": ["локализации дефектов"], "Тест-менеджмент": ["тест-менеджмент"], "Отчеты по тестированию": ["Ручное тестирование", "Автоматизированное тестирование", "Приемочное тестирование", "Интеграционное тестирование", "Нагрузочное тестирование", "Отчеты по тестированию", "Тестирование веб-приложений", "Тест-планы", "Составляет отчеты о проделанной работе", "Придумывает тест-планы", "Продуктовый аналитик", "Анализирует данные", "Составляет план проектов", "Тестирует маркетинговые гипотезы"], "Ищет и воспроизводит баги": ["Ищет и воспроизводит баги", "Ищет закономерности и ошибки в данных", "Ищет подрядчиков", "Просчет бизнес-моделей"], "Заводит заявки на исправление ошибок": ["Заводит заявки на исправление ошибок", "Ищет закономерности и ошибки в данных", "Контролирует исполнение задач"], "Финансовый аналитик": ["Фреймворк", "Функциональные тесты", "Автоматизированное тестирование", "Игровой аналитик", "Продуктовый аналитик", "Финансовый аналитик", "Бизнес-аналитик", "HR-аналитик", "Маркетинговый аналитик", "BI-аналитик", "Анализирует данные", "Управляет финансовыми потоками", "Аналитика", "Финансы", "Анализирует рынок и ЦА", "Управляет финансовыми ресурсами"], "Excel": ["excel"], "Google Analytics": ["google analytics"], "AppMetrica": ["appmetrica"], "Яндекс.Метрика": ["Фреймворк", "Тест-аналитика", "Маркетинговый аналитик", "Яндекс.Метрика", "Стандарты менеджмента", "Аналитика", "Тестирует маркетинговые гипотезы"], "Tilda": ["tilda"], "Jira": ["Jira", "JIRA"], "Confluence": ["confluence"], "Notion": ["notion"], "Trello": ["trello"], "Miro": ["miro"], "Scrum": ["scrum"], "Kanban": ["kanban"], "Agile": ["agile"], "Распределяет задачи по командам": ["Составляет отчеты о проделанной работе", "Управление командой", "Распределяет задачи по командам", "Контролирует исполнение задач", "Управляет командой", "Развивает каналы продаж"], "Бизнес-кейсы": ["Сквозные тесты", "Тест-кейсы", "Бизнес-аналитик", "Бизнес-кейсы"], "MVP": ["mvp"], "Unit-экономика": ["unit-экономика"], "Adobe Photoshop": ["adobe photoshop"], "Adobe After Effects": ["adobe after effects"], "Adobe Illustrator": ["adobe illustrator"], "Adobe InDesign": ["adobe indesign"], "ArchiCAD": ["archicad"], "SketchUp": ["sketchup"], "3ds Max": ["3ds max"], "AutoCAD": ["autocad"], "C#": ["c#"], "ASP.NET": ["ASP.NET", ".NET"], "SOAP": ["soap"], "gRPC": ["grpc"], "1С": ["1с"], "1C": ["1c"], "Keras": ["keras"], "TensorFlow": ["tensorflow"], "R": ["r"], "PyTorch": ["pytorch"], "СКД": ["скд"], "HTTP": ["http"], "JSON": ["json"], "XML": ["xml"], "Ethernet": ["ethernet"], "Unix": ["unix"], "DNS": ["dns"], "Kubernetes (K8s)": ["Kubernetes (K8s)", "Kubernetes"], "Zabbix": ["zabbix"], "ELK": ["elk"]}

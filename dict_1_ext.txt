@@ -1,0 +1,549 @@
+Java
+Java
+1С
+1C
+SQL
+SQL
+NoSQL
+NoSQL
+Allure
+Allure
+Spring
+Spring
+JUnit
+JUnit
+Selenium
+Selenium
+REST
+CI/CD
+CI/CD
+X-Path
+X-Path
+JavaScript
+JavaScript
+HTML/CSS
+HTML/CSS
+Python
+Python
+Python
+Go
+Unit
+тесты
+«code review»
+Бэкенд
+Golang
+SQL
+API
+Нереляционными
+«База данных»
+Redis
+Docker
+k8s
+Git
+NSQ
+Apache Kafka
+PostgreSQL
+Aerospike
+CI/CD
+
+GPT-агентами
+VK cloud
+Lean Canvas
+JTBD
+Retention
+Figma
+CustDev
+User Story
+Product Market Fit
+Юнит-экономика
+Ценностное предложение
+
+Java
+Java
+Python
+Python
+JavaScript
+JavaScript
+C++
+C++
+C
+C
+TCP/IP
+TCP/IP
+SQL
+SQL
+NoSQL
+NoSQL
+Linux
+Linux
+Git
+Git
+HTML/CSS
+HTML/CSS
+Docker
+Docker
+Allure
+Allure
+Selenium
+Selenium
+Unit
+Power BI
+Power BI
+Tableau
+Tableau
+Amplitude
+Amplitude
+ANNs
+ANNs
+GAN
+GAN
+
+Frontend
+Backend
+Fullstack
+низкоуровневое
+высокоуровневое
+для мобильных приложений
+для оборудования
+для десктоп-приложений
+для веб-приложений
+для умных устройств
+Java
+Python
+JavaScript
+PHP
+C++
+C
+TCP/IP
+SQL
+NoSQL
+Linux
+Git
+HTML/CSS
+Docker
+Allure
+Selenium
+JUnit
+ANNs
+GAN
+Алгоритмы
+Паттерны
+Фреймворк
+Структуры данных
+Потоки данных
+Виртуализация
+Протоколы передачи данных
+Архитектура приложений и сервисов
+Ручное тестирование
+Функциональные тесты
+Автоматизированное тестирование
+Приемочное тестирование
+Сквозные тесты
+Интеграционное тестирование
+Нагрузочное тестирование
+Модульные тесты
+Тестовая документация
+Unit-тесты
+Чек-листы
+Локализации дефектов
+Тест-аналитика
+Тест-менеджмент
+Отчеты по тестированию
+Тест-кейсы
+Тестирование веб-приложений
+Тест-планы
+Проверяет работу сайтов и приложений
+Ищет и воспроизводит баги
+Заводит заявки на исправление ошибок
+Составляет отчеты о проделанной работе
+Придумывает тест-планы
+Игровой аналитик
+Продуктовый аналитик
+Финансовый аналитик
+Бизнес-аналитик
+HR-аналитик
+Маркетинговый аналитик
+BI-аналитик
+Excel
+Google Analytics
+AppMetrica
+Power BI
+Яндекс.Метрика
+Tableau
+Анализирует данные
+Ищет закономерности и ошибки в данных
+Предлагает улучшения на основе данных
+Визуализирует данные
+HTML
+CSS
+Tilda
+Jira
+Confluence
+Notion
+Trello
+Miro
+Figma
+Основы программирования
+Контроль версий
+Управление командой
+Веб-программирование
+Стандарты менеджмента
+Scrum
+Kanban
+Agile
+Составление проектной документации
+Жизненный цикл проекта
+Составляет план проектов
+Распределяет задачи по командам
+Контролирует исполнение задач
+Ищет подрядчиков
+Управляет финансовыми потоками
+Составляет отчеты о проделанной работе
+Просчет бизнес-моделей
+Аналитика
+Бизнес-кейсы
+Привлечение инвестиций
+MVP
+Жизненный цикл продукта
+Финансы
+Тестирование гипотез
+Управление командой
+Основы программирования
+Unit-экономика
+Scrum
+Kanban
+Agile
+Tilda
+Figma
+Miro
+Jira
+Notion
+Confluence
+Trello
+Анализирует рынок и ЦА
+Придумывает новый продукт
+Управляет финансовыми ресурсами
+Управляет командой
+Развивает каналы продаж
+Тестирует маркетинговые гипотезы
+Управляет жизненным циклом продукта
+Выстраивает стратегии продвижения продукта
+Java
+Java
+SQL
+SQL
+NoSQL
+NoSQL
+Allure
+Allure
+Spring
+Spring
+JUnit
+JUnit
+Selenium
+Selenium
+REST
+CI/CD
+CI/CD
+X-Path
+X-Path
+JavaScript
+JavaScript
+HTML/CSS
+HTML/CSS
+Python
+Python
+Figma
+Figma
+Adobe Photoshop
+ Tilda
+Tilda
+Adobe After Effects
+Adobe Illustrator
+Adobe InDesign
+ ArchiCAD
+ArchiCAD
+ SketchUp
+SketchUp
+ 3ds Max
+3ds Max
+ AutoCAD
+AutoCAD
+C#
+C#
+ASP.NET
+ASP.NET
+.NET
+.NET
+SQL
+SQL
+NoSQL
+NoSQL
+JavaScript
+JavaScript
+SOAP
+SOAP
+gRPC
+gRPC
+Git
+Git
+Python
+Python
+SQL
+SQL
+Docker
+Docker
+NoSQL
+NoSQL
+ANNs
+ANNs
+Keras
+Keras
+TensorFlow
+TensorFlow
+R
+PyTorch
+PyTorch
+SOAP
+СКД
+СКД
+HTTP
+HTTP
+JSON
+JSON
+XML
+XML
+Ethernet
+Unix
+Unix
+CI/CD
+CI/CD
+DNS
+DNS
+Docker
+Docker
+Kubernetes (K8s)
+Kubernetes (K8s)
+Python
+Python
+SQL
+SQL
+NoSQL
+NoSQL
+Zabbix
+Zabbix
+ELK
+ELK
+C#
+Java
+Python
+JavaScript
+Scala
+Swift
+Perl
+Ruby
+Go
+Rust
+TypeScript
+Kotlin
+PHP
+C++
+C
+Objective-C
+Shell Scripting
+PowerShell
+Bash
+SQL
+PL/SQL
+T-SQL
+MySQL
+PostgreSQL
+MongoDB
+Oracle
+SQLite
+Firebase
+Django
+Flask
+Spring
+Laravel
+Ruby on Rails
+.NET
+Node.js
+Express.js
+Angular
+React
+Vue.js
+Ember.js
+Backbone.js
+Meteor.js
+Ionic
+React Native
+Flutter
+Xamarin
+SwiftUI
+Kotlin Multiplatform
+Dart
+Elm
+Crystal
+Julia
+R
+MATLAB
+Scilab
+Groovy
+Clojure
+Elixir
+Erlang
+Haskell
+Lua
+Perl
+Racket
+Python
+Java
+C#
+C++
+JavaScript
+TypeScript
+PHP
+Ruby
+Swift
+Kotlin
+Go
+Rust
+Scala
+Perl
+Shell Scripting
+SQL
+PL/SQL
+T-SQL
+PostgreSQL
+MySQL
+MongoDB
+Oracle Database
+Redis
+Lua
+Groovy
+R
+MATLAB
+Julia
+Rust
+Dart
+Elixir
+Erlang
+Haskell
+Lisp
+Prolog
+Racket
+Scheme
+Smalltalk
+Clojure
+F#
+Objective-C
+Ada
+ALGOL
+BASIC
+COBOL
+Fortran
+Pascal
+Prolog
+SML
+Ada
+.NET Framework
+.NET Core
+ASP.NET
+Angular
+React
+Vue.js
+Node.js
+Express.js
+Django
+Flask
+Ruby on Rails
+Laravel
+Symfony
+Spring Boot
+Hibernate
+JUnit
+Selenium
+JMeter
+Jenkins
+Docker
+Kubernetes
+Ansible
+Terraform
+AWS (Amazon Web Services)
+Google Cloud Platform
+Microsoft Azure
+Git
+Mercurial
+SVN
+TFS
+JIRA
+Confluence
+Slack
+Microsoft Teams
+Zoom
+Slack
+Trello
+Asana
+Jira
+Confluence
+Slack
+Microsoft Teams
+Zoom
+Slack
+Trello
+Asana
+Jira
+Confluence
+Slack
+Microsoft Teams
+.NET Framework
+.NET Core
+ASP.NET
+Angular
+React
+Vue.js
+Node.js
+Express.js
+Django
+Flask
+Ruby on Rails
+Laravel
+Symfony
+Spring Boot
+Hibernate
+JUnit
+Selenium
+JMeter
+Jenkins
+Docker
+Kubernetes
+Ansible
+Terraform
+AWS (Amazon Web Services)
+Google Cloud Platform
+Microsoft Azure
+Git
+Mercurial
+SVN
+TFS
+JIRA
+Confluence
+Slack
+Microsoft Teams
+Zoom
+Slack
+Trello
+Asana
+Jira
+Confluence
+Slack
+Microsoft Teams
+Zoom
+Slack
+Trello
+Asana
+Jira
+Confluence
+Slack
+Microsoft Teams
