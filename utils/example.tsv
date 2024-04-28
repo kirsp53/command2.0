@@ -1,0 +1,12 @@
+prophecy_name	prophecy_name_sim	skill_name	skill_sim	result
+DevOps-инженер	tensor([[0.5270]])	Linux Python Docker GitLab Molecule Karate Ansible Terraform Prometheus Grafana ELK	tensor([[0.2109]])	[[0.11114834994077682]]
+Разработчик игр на Unreal Engine	tensor([[0.5117]])	Unreal Engine С++ GitLab	tensor([[0.2479]])	[[0.12685614824295044]]
+Frontend-разработчик	tensor([[0.5100]])	VS Code Vitest Jest Vite Webpack Pinia Element Plus Eslint Sass Pixel Perfect Emmet Lighthouse HTML CSS GitLab GitHub Vue 3.0 React TypeScript JavaScript REST API Figma Chrome DevTools	tensor([[0.2753]])	[[0.1404121220111847]]
+Android-разработчик	tensor([[0.5275]])	Java Kotlin Android SDK JUnit Swift Objective-C iOS SDK JavaScript C++ CSQL  Git	tensor([[0.2758]])	[[0.1454693078994751]]
+iOS-разработчик	tensor([[0.5875]])	Swift Objective-C Swift Playgrounds Xcode Git GitHub Linux Docker SQL MySQL PostgreSQL	tensor([[0.2660]])	[[0.1562875658273697]]
+Python-разработчик	tensor([[0.4873]])	Python PyCharm GitLab pytest SQL MySQL PostgreSQL Docker Flask FastAPI HTML CSS	tensor([[0.3224]])	[[0.15710528194904327]]
+Тестировщик ПО	tensor([[0.4986]])	Java SQL NoSQL Allure Spring JUnit Selenium REST CI/CD X-Path JavaScript HTML/CSS Python	tensor([[0.3366]])	[[0.16781553626060486]]
+Backend-разработчик на Python	tensor([[0.4649]])	Python Django Flask FastAPI HTML CSS PyCharm Docker Linux Kubernetes Git GitHub Google Colab Visual Studio Visual Studio Code SQL MySQL Oracle PostgreSQL JSON XML	tensor([[0.3826]])	[[0.17785681784152985]]
+C# разработчик	tensor([[0.5224]])	C# ASP.NET .NET SQL NoSQL JavaScript SOAP gRPC Git	tensor([[0.3482]])	[[0.18192632496356964]]
+Сетевой инженер	tensor([[0.5141]])	Python Linux TCP/IP FHRP STP BGP OSPF	tensor([[0.4269]])	[[0.2194729894399643]]
+1C-разработчик	tensor([[0.7890]])	1C SOAP HTTP XML JSON СКД	tensor([[0.4300]])	[[0.33928748965263367]]
