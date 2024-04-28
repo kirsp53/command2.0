@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="FontGeologica\fonts.css" />
+
+  <title>Кстати</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__block">
+        <div class="header__logo">
+          <a href="#">
+            <img src="../images/Group 1.svg" alt="#" />
+            <span>Кстати</span>
+          </a>
+        </div>
+        <div class="header__auth">
+          <a href="#"><img src="../images/profile.svg" alt="#" /></a>
+        </div>
+      </div>
+    </header>
+    <main class="main __container">
+      <div class="main__title">
+        <h1>Покажем как стать...</h1>
+      </div>
+      <div class="main__search-block">
+        <div class="main__search-block-tumbler">
+          <div class="optionlabel">
+            <input id="option1" type="radio" name="option-1" checked /><label for="option1">Ссылка</label>
+            <input id="option2" type="radio" name="option-1" /><label for="option2">Текст</label>
+            <input id="option3" type="radio" name="option-1" /><label for="option3">Pdf</label>
+          </div>
+        </div>
+        <div class="main__search-block-input">
+          <div class="search__input-cont">
+            <input type="text" class="custom-input" placeholder="Вставьте ссылку на вакансию" id="myInput" />
+            <a href="#" id="link">Генерация</a>
+            <div class="options-container" id="optionsContainer">
+              <!-- Content of your popup here -->
+
+
+              <div class="main__search-block-tumbler main__search-block-tumbler-for-filter">
+                <p>Что для вас наиболее важно?</p>
+                <div class="optionlabel optionlabel-for-filter-one">
+                  <input id="option4" type="radio" name="option-2" checked /><label for="option4">Скорость
+                    обучения</label>
+                  <input id="option5" type="radio" name="option-2" /><label for="option5">Цена обучения</label>
+                  <input id="option6" type="radio" name="option-2" /><label for="option6">Качество обучения</label>
+                </div>
+
+                <div class="main__search-block-tumbler main__search-block-tumbler-for-filter">
+                  <p>Выберите тип промта:</p>
+                  <div class="optionlabel optionlabel-for-filter-two">
+                    <input id="option7" type="radio" name="option-3" checked /><label for="option7">Быстро</label>
+                    <input id="option8" type="radio" name="option-3" /><label for="option8">Долго</label>
+
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main__sub-information"></div>
+    </main>
+    <footer class="footer __container">
+      <div class="footer__menu">
+        <div class="card card-1">
+          <h2>Как правильно сделать генерацию?</h2>
+          <img src="../images/1714228957780 1.svg" alt="Description" class="card-image">
+
+        </div>
+        <div class="container">
+          <!-- Card 1 -->
+          <!-- Card 2 -->
+          <div class="card">
+            <h3>Примеры</h3>
+            <ul>
+              <li>1С-разработчик</li>
+              <li>Тестировщик</li>
+              <li>Frontend-разработчик</li>
+              <li>UI/UX</li>
+              <li>Frontend-разработчик</li>
+              <li>Backend</li>
+              <!-- More items here -->
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Советы</h3>
+            <img src="../images/1714228588355 1.svg" alt="Description" class="card-image">
+
+          </div>
+          <div class="card">
+            <h3>Как это работает?</h3>
+            <img src="../images/1714226081910 1.svg" alt="Description" class="card-image">
+
+          </div>
+          <div class="card">
+            <h3>Партнеры</h3>
+            <ul>
+              <li>HeadHunter</li>
+              <li>SuperJob</li>
+              <li>GeekBrains</li>
+              <li>YandexPracticum</li>
+              <li>WorkHere</li>
+              <li>Stepik</li>
+              <li>HtmlAcademy</li>
+              <!-- More items here -->
+            </ul>
+          </div>
+          <!-- More cards like Card 2 for Советы, Как это работает?, Партнёры -->
+        </div>
+
+      </div>
+    </footer>
+  </div>
+  <script>
+    // Флаг, показывающий, находится ли курсор мыши внутри контейнера
+    var isInsideOptions = false;
+
+    var inputField = document.getElementById("myInput");
+    var optionsContainer = document.getElementById("optionsContainer");
+    var link = document.getElementById("link");
+
+    inputField.addEventListener("focus", function () {
+      optionsContainer.style.display = "block";
+      link.style.display = "flex";
+    });
+
+    inputField.addEventListener("blur", function () {
+      // Скрываем контейнер только если курсор мыши не находится внутри
+      if (!isInsideOptions) {
+        setTimeout(function () {
+          optionsContainer.style.display = "none";
+          link.style.display = "none";
+        }, 200);
+      }
+    });
+
+    // Установка флага при наведении курсора на контейнер
+    optionsContainer.addEventListener("mouseenter", function () {
+      isInsideOptions = true;
+    });
+
+    // Сброс флага при выходе курсора из контейнера
+    optionsContainer.addEventListener("mouseleave", function () {
+      isInsideOptions = false;
+      // Если элемент потерял фокус и курсор мыши уже не внутри контейнера, скрыть его
+      if (!inputField.contains(document.activeElement)) {
+        optionsContainer.style.display = "none";
+        link.style.display = "none";
+      }
+    });
+  </script>
+</body>
+
+</html>

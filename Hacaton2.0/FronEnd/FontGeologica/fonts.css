@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Geologica_Cursive-Light";
+  font-weight: 300;
+  src: local("Geologica_Cursive-Light"),
+    url("C:\Users\Александр\Documents\Projects\Hacaton2.0\FronEnd\FontGeologica\Geologica_Cursive-Light.woff")
+      format("woff"),
+    url("C:\Users\Александр\Documents\Projects\Hacaton2.0\FronEnd\FontGeologica\Geologica_Cursive-Light.ttf")
+      format("ttf");
+}
+@font-face {
+  font-family: "Geologica-Light";
+  font-weight: 300;
+  src: local("Geologica-Light"),
+    url("C:\Users\Александр\Documents\Projects\Hacaton2.0\FronEnd\FontGeologica\Geologica-Light.woff")
+      format("woff"),
+    url("C:\Users\Александр\Documents\Projects\Hacaton2.0\FronEnd\FontGeologica\Geologica-Light.ttf")
+      format("ttf");
+}
+@font-face {
+  font-family: "Geologica-Regular";
+  font-weight: 400;
+  src: local("Geologica-Regular"),
+    url("C:\Users\Александр\Documents\Projects\Hacaton2.0\FronEnd\FontGeologica\Geologica-Regular.woff")
+      format("woff"),
+    url("C:\Users\Александр\Documents\Projects\Hacaton2.0\FronEnd\FontGeologica\Geologica-Regular.ttf")
+      format("ttf");
+}
+@font-face {
+  font-family: "Geologica-SemiBold";
+  font-weight: 600;
+  src: local("Geologica-SemiBold"),
+    url("C:\Users\Александр\Documents\Projects\Hacaton2.0\FronEnd\FontGeologica\Geologica-SemiBold.woff")
+      format("woff"),
+    url("C:\Users\Александр\Documents\Projects\Hacaton2.0\FronEnd\FontGeologica\Geologica-SemiBold.ttf")
+      format("ttf");
+}

@@ -2850,7 +2850,7 @@ jobs = [j1]
 
 
 async def compare(jobs,courses):
-    output = (await extract_keywords(j4.job_text, characteristic_words))
+    output = (await extract_keywords(jobs.job_text, characteristic_words))
     d = dict.fromkeys(output)
     for key in d.keys():
         d[key] = characteristic_words[key]
@@ -2870,7 +2870,7 @@ async def compare(jobs,courses):
         #print(utils.new3.compare_sentences(c.course_name,j4.job_name))
 async def main():
     courses = await add_to_courses()
-    await compare(jobs, courses)
+    await compare(j4, courses)
 
 asyncio.run(main())
 

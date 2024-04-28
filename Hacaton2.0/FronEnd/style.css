@@ -1,0 +1,309 @@
+/* Цвет для фона #0E132A */
+/* -----обнуление---------------------- */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+}
+body {
+  font-family: Geologica-Light;
+  font-weight: 300;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+[class*="__container"] {
+  max-width: 1060px;
+  margin: 0px auto;
+}
+.header {
+  width: 100%;
+  padding: 40px 40px 0 40px;
+}
+
+.header__block {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo a {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+.header__logo a span {
+  font-size: 24px;
+  color: #5b5b5b;
+}
+/* --------------------------------------------------------------------- */
+
+.main__title {
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+
+.main__title h1 {
+  font-style: normal;
+  font-weight: 510;
+  font-size: 100px;
+  line-height: 100%;
+  /* identical to box height, or 112px */
+
+  color: #e0e0e0;
+}
+/* -----Переключатель--------------------------------------------------- */
+.main__search-block-tumbler {
+  display: flex;
+  justify-content: center;
+}
+/* styling*/
+.optionlabel {
+  display: flex;
+
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+}
+.optionlabel [type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+.optionlabel label {
+  display: flex;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* Text */
+
+  font-style: normal;
+  font-weight: 510;
+  font-size: 16px;
+  line-height: 130%;
+
+  color: #848484;
+}
+/* your magic ? */
+:checked + label {
+  width: 90px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Text */
+
+  font-style: normal;
+  font-weight: 510;
+  font-size: 16px;
+  line-height: 130%;
+
+  color: #373737;
+}
+
+.main__search-block-tumbler-for-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.main__search-block-tumbler-for-filter p {
+  font-style: normal;
+  font-weight: 510;
+  font-size: 16px;
+  line-height: 130%;
+  /* identical to box height, or 21px */
+
+  color: #848484;
+}
+.optionlabel-for-filter-one {
+  width: 600px;
+}
+.optionlabel-for-filter-one label {
+  width: 200px;
+}
+.optionlabel-for-filter-two {
+  width: 240px;
+}
+.optionlabel-for-filter-two label {
+  width: 100px;
+}
+/* ------------------------------------------------- */
+
+.custom-input {
+  width: 1060px; /* Set the width */
+  height: 72px; /* Set the height */
+  border-radius: 26px; /* Half of height to make it fully rounded */
+  border: 2px solid #5135ff; /* Light grey border */
+  padding: 20px; /* Padding inside the input */
+
+  font-size: 20px; /* Set the font-size */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  outline: none; /* Remove the default focus outline */
+}
+.custom-input:focus {
+  border: 3px solid #f0f1f4; /* Light grey border */
+  box-shadow: 0 30px 0px #f0f1f4;
+}
+
+.custom-input::placeholder {
+  /* Change the placeholder style */
+  color: #a9a9a9; /* Placeholder text color */
+
+  font-style: normal;
+  font-weight: 510;
+  font-size: 24px;
+  line-height: 100%;
+
+  color: #a7a7a7;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.options-container {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 4px solid #f0f1f4;
+  padding: 10px;
+  z-index: 1000;
+  width: 1060px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.custom-input:focus + .options-container {
+  display: block; /* Show the options when the input is focused */
+}
+
+.options label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.main__search-block-input {
+  margin-top: 24px;
+}
+
+.search__input-cont {
+  position: relative;
+}
+#link {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  background-color: #5135ff;
+  width: 133px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+
+  font-style: normal;
+  font-weight: 510;
+  font-size: 16px;
+  line-height: 100%;
+  transition: 0.2s;
+}
+
+.search__input-cont > a:hover {
+  background-color: #654dff;
+}
+.footer {
+  margin-top: 20px;
+}
+.footer__menu {
+  display: flex;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px; /* Maximum width of the cards */
+  max-height: 244px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box-shadow for the 3D effect */
+  margin: 10px; /* Space around each card */
+  border-radius: 10px; /* Rounded corners for the cards */
+  background-color: #f0f0f0; /* Card background color */
+  padding: 20px; /* Padding inside the cards */
+  box-sizing: border-box; /* Include padding and border in the card's total width and height */
+}
+
+.card-image {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Keep the aspect ratio of the image */
+  border-radius: 10px 10px 0 0; /* Only round the top corners of the image */
+}
+
+.card h2,
+.card h3 {
+  /* text */
+
+  font-style: normal;
+  font-weight: 510;
+  font-size: 24px;
+  line-height: 100%;
+  /* identical to box height, or 24px */
+
+  color: #373737;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.card ul li {
+  font-size: 10px;
+  background-color: #fff; /* Background of the list items */
+  margin: 5px 0; /* Margin between list items */
+  padding: 5px; /* Padding inside list items */
+  border-radius: 5px; /* Rounded corners for list items */
+}
+
+/* Style for other specific card elements as needed */
+.card-1 {
+  max-height: 507px;
+  min-width: 500px;
+}
