@@ -1,3 +1,7 @@
+import asyncio
+import csv
+
+import aiofiles
 import nltk
 import sklearn
 import gensim
@@ -95,7 +99,7 @@ with open ("devops.txt", encoding = 'utf-8',mode = "r") as devops:
 with open ("backend.txt", encoding = 'utf-8',mode = "r") as backend:
     text_backend1 = backend.read()
 
-print(text_python_back1)
+#print(text_python_back1)
 text_python_back = """Баннер скидкиДекорДекорВЕСЕННЯЯ РАСПРОДАЖАГОД АНГЛИЙСКОГО И 2 КУРСА
 ПО НЕЙРОСЕТЯМ В ПОДАРОКскидка до
 -42%
@@ -1071,7 +1075,7 @@ Geekbrains
 
 
 """
-print(text_python_back1 == text_python_back)
+#print(text_python_back1 == text_python_back)
 
 text = """Более 30 лет мы стабильны на рынке и каждый из вас может выбрать для себя работу по душе.
 
@@ -2763,10 +2767,10 @@ from ast import literal_eval
 data = {'text_processed': preprocess_gemsim(text)}
 ds_line = pd.DataFrame(data)
 values = ds_line["text_processed"].values
-print(values)
-print(type(preprocess_gemsim(text) ))
+#print(values)
+#print(type(preprocess_gemsim(text) ))
 keywords = []
-def extract_keywords(sentence,characteristic_words):
+async def extract_keywords(sentence,characteristic_words):
     sentence = sentence.lower()
     tokens = word_tokenize(sentence)
 
@@ -2807,8 +2811,8 @@ class job:
         self.job_name = job_name
         self.job_link = job_link
         self.job_text = job_text
-    def get_job_requierments(self):
-        return extract_keywords(self.job_text,characteristic_words)
+    async def get_job_requierments(self):
+        return await extract_keywords(self.job_text,characteristic_words)
 j1 = job("1c","https://tver.hh.ru/vacancy/95546610?query=%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82+1C&hhtmFrom=vacancy_search_list",text_one_c_offer)
 j2 = job("java","",text_java1)
 j3 = job("devops","",text_devops1)
@@ -2818,32 +2822,58 @@ c1 = course("devops", "https://gb.ru/geek_university/developer/architecture/devo
 c2 = course("1c","https://gb.ru/geek_university/developer/programmer/1c-developer",text_one_c)
 c3 = course("tester","https://gb.ru/geek_university/developer/qa-engineer/master",text_tester)
 c4 = course("python backend","https://gb.ru/geek_university/developer/programmer/backend",text_python_back)
-print((extract_keys(c3.course_text,characteristic_words)) ,"sigma")
-print((extract_keywords(c3.course_text,characteristic_words)))
-output = (extract_keywords(j4.job_text,characteristic_words))
-print(output)
-d = dict.fromkeys(output)
-for key in d.keys():
-    d[key] = characteristic_words[key]
-print(str(characteristic_words.items()))
-print(str(d.items()))
+
+async def add_to_courses():
+    courses= []
+    with open('example.csv', 'r') as csvfile:
+        csvreader = csv.reader(csvfile)
+        for row in csvreader:
+            # print(row)
+            if row != ['title', 'clean_title', 'link', 'filepath']:
+                async with aiofiles.open(row[3], encoding='utf-8', mode="r") as t:
+                    text =await t.read()
+                c = course(row[1], row[2], text)
+                courses.append(c)
+    return courses
+
+#print((extract_keys(c3.course_text,characteristic_words)) ,"sigma")
+#print((extract_keywords(c3.course_text,characteristic_words)))
+
+#print(output)
+
+#print(str(characteristic_words.items()))
+#print(str(d.items()))
 
 jobs = [j1]
-courses = [c1,c2,c3,c4]
-highest_score = 0
-highest_scored_course = courses[0]
-for j in jobs:
-    for c in courses:
-        if highest_score < len(extract_keywords(c.course_text,d)):
-            highest_score = len(extract_keywords(c.course_text,d))
-            highest_scored_course = c
-        print(c.course_name, len(extract_keywords(c.course_text,d)), "из", len(d), c.course_link)
-    print("\n Вам больше всего подходит курс:", highest_scored_course.course_name, highest_scored_course.course_link,
-          "\nНавыки совпадающие с вакансией(" + str(len(extract_keywords(highest_scored_course.course_text,d))), "из",
-          str(len(d)) + "):" + ', '.join(extract_keywords(highest_scored_course.course_text,d)))
+#courses = [c1,c2,c3,c4]
 
-#for c in courses:
-    #print(utils.new3.compare_sentences(c.course_name,j4.job_name))
+
+
+async def compare(jobs,courses):
+    output = (await extract_keywords(j4.job_text, characteristic_words))
+    d = dict.fromkeys(output)
+    for key in d.keys():
+        d[key] = characteristic_words[key]
+    highest_score = 0
+    highest_scored_course = courses[0]
+    for j in jobs:
+        for c in courses:
+            keywords = await extract_keywords(c.course_text,d)
+            if highest_score < len(keywords):
+                highest_score = len(keywords)
+                highest_scored_course = c
+            print(c.course_name, len(await extract_keywords(c.course_text,d)), "из", len(d), c.course_link + f'[совпадающие навыки: {", ".join(keywords)}]')
+        print("\n Вам больше всего подходит курс:", highest_scored_course.course_name, highest_scored_course.course_link,
+              "\nНавыки совпадающие с вакансией(" + str(len(await extract_keywords(highest_scored_course.course_text,d))), "из",
+              str(len(d)) + "):" + ', '.join(await extract_keywords(highest_scored_course.course_text,d)))
+    #for c in courses:
+        #print(utils.new3.compare_sentences(c.course_name,j4.job_name))
+async def main():
+    courses = await add_to_courses()
+    await compare(jobs, courses)
+
+asyncio.run(main())
+
 
 
 #print("devops ",len(extract_keywords(text_devops)),"из",len(characteristic_words),  extract_keywords(text_devops))

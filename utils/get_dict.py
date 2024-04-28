@@ -11,7 +11,7 @@ def get_dict(dict_path):
     values = []
     for category in json_data:
         keys.append(category)
-        print("///////////", category)
+        #print("///////////", category)
         topics = []
         for trendingtopic in json_data[category]:
             topics.append(trendingtopic)

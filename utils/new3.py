@@ -1,6 +1,7 @@
 # Set the TRANSFORMERS_CACHE environment variable
 import os
 from ast import literal_eval
+import time
 devopsText = """
 Получите все нужные навыки
 Фотография
@@ -302,8 +303,7 @@ import numpy as np
 import pandas as pd
 
 import umap
-from sklearn.manifold import TSNE
-from umap import UMAP
+
 class query:
     def __init__(self,jobname,skills):
         self.jobname = jobname
@@ -313,121 +313,121 @@ class query:
     def get_skills(self):
         return self.skills
 
-q = query("Python/Go developer (middle/middle+)","Python PostgreSQL")
-q1= query("Junior DevOps инженер","Linux Grafana Prometheus Bash Kubernetes Docker Администрирование серверов Linux Ansible Gitlab Terraform PostgreSQL MySQL Python")
-q2 = query("Middle Android Developer","Kotlin, MVP (Moxy), MVVM, RxJava 3, Coroutines, Room, Hilt + Dagger, Retrofit + OkHttp, Azure DevOps. Мигрируем на KMM, Jetpack Compose, MVI.")
-q3 = query("Unreal Engine AI Developer","Game Programming C++ Unreal Engine 5 AI")
-q4 = query("Стажер-программист 1С","Управление временем 1С: Комплексная автоматизация 1С: Управление Торговлей 1С: Управление Производственным Предприятием ERP-системы на базе 1С Сопровождение 1с Доработка 1С 1С:УНФ")
-os.environ['HF_HOME'] = 'E:/repos/tCash'
-#"C# .NET Framework MS SQL HTML .NET JavaScript ООП WPF Работа с базами данных"
-from sentence_transformers import SentenceTransformer, util
-target_name_sentece = q4.get_job_name()
-target_skills_sentece = q4.get_skills()
-sentences = ["C# разработчик","Python-разработчик","Frontend-разработчик","DevOps-инженер","Backend-разработчик на Python","iOS-разработчик","Android-разработчик","Тестировщик ПО","Разработчик игр на Unreal Engine","Сетевой инженер","1C-разработчик"]
-sentences2 = ["C# ASP.NET .NET SQL NoSQL JavaScript SOAP gRPC Git","Python PyCharm GitLab pytest SQL MySQL PostgreSQL Docker Flask FastAPI HTML CSS","VS Code Vitest Jest Vite Webpack Pinia Element Plus Eslint Sass Pixel Perfect Emmet Lighthouse HTML CSS GitLab GitHub Vue 3.0 React TypeScript JavaScript REST API Figma Chrome DevTools","Linux Python Docker GitLab Molecule Karate Ansible Terraform Prometheus Grafana ELK","Python Django Flask FastAPI HTML CSS PyCharm Docker Linux Kubernetes Git GitHub Google Colab Visual Studio Visual Studio Code SQL MySQL Oracle PostgreSQL JSON XML","Swift Objective-C Swift Playgrounds Xcode Git GitHub Linux Docker SQL MySQL PostgreSQL","Java Kotlin Android SDK JUnit Swift Objective-C iOS SDK JavaScript C++ CSQL  Git","Java SQL NoSQL Allure Spring JUnit Selenium REST CI/CD X-Path JavaScript HTML/CSS Python","Unreal Engine С++ GitLab","Python Linux TCP/IP FHRP STP BGP OSPF","1C SOAP HTTP XML JSON СКД"]
-print(len(sentences))
 
 
 
-model = SentenceTransformer('sentence-transformers/LaBSE')
+if __name__ == "__main__":
+    print("main executed")
+    """  sentences = ["C# разработчик", "Python-разработчик", "Frontend-разработчик", "DevOps-инженер",
+                 "Backend-разработчик на Python", "iOS-разработчик", "Android-разработчик", "Тестировщик ПО",
+                 "Разработчик игр на Unreal Engine", "Сетевой инженер", "1C-разработчик"]
+        sentences2 = ["C# ASP.NET .NET SQL NoSQL JavaScript SOAP gRPC Git",
+                      "Python PyCharm GitLab pytest SQL MySQL PostgreSQL Docker Flask FastAPI HTML CSS",
+                      "VS Code Vitest Jest Vite Webpack Pinia Element Plus Eslint Sass Pixel Perfect Emmet Lighthouse HTML CSS GitLab GitHub Vue 3.0 React TypeScript JavaScript REST API Figma Chrome DevTools",
+                      "Linux Python Docker GitLab Molecule Karate Ansible Terraform Prometheus Grafana ELK",
+                      "Python Django Flask FastAPI HTML CSS PyCharm Docker Linux Kubernetes Git GitHub Google Colab Visual Studio Visual Studio Code SQL MySQL Oracle PostgreSQL JSON XML",
+                      "Swift Objective-C Swift Playgrounds Xcode Git GitHub Linux Docker SQL MySQL PostgreSQL",
+                      "Java Kotlin Android SDK JUnit Swift Objective-C iOS SDK JavaScript C++ CSQL  Git",
+                      "Java SQL NoSQL Allure Spring JUnit Selenium REST CI/CD X-Path JavaScript HTML/CSS Python",
+                      "Unreal Engine С++ GitLab", "Python Linux TCP/IP FHRP STP BGP OSPF", "1C SOAP HTTP XML JSON СКД"]
+        print(len(sentences))
+        model = SentenceTransformer('sentence-transformers/LaBSE')
+        embeddings = model.encode(sentences)
+        embeddings2 = model.encode(sentences2)
+        embedding_1 = model.encode(sentences[0], convert_to_tensor=True)
+        embedding_2 = model.encode(sentences[1], convert_to_tensor=True)
+        embedding_3 = model.encode(sentences[2], convert_to_tensor=True)
+        embedding_Devops = model.encode(devopsText, convert_to_tensor=True)
+    
+        q = query("Python/Go developer (middle/middle+)","Python PostgreSQL")
+        q1= query("Junior DevOps инженер","Linux Grafana Prometheus Bash Kubernetes Docker Администрирование серверов Linux Ansible Gitlab Terraform PostgreSQL MySQL Python")
+        q2 = query("Middle Android Developer","Kotlin, MVP (Moxy), MVVM, RxJava 3, Coroutines, Room, Hilt + Dagger, Retrofit + OkHttp, Azure DevOps. Мигрируем на KMM, Jetpack Compose, MVI.")
+        q3 = query("Unreal Engine AI Developer","Game Programming C++ Unreal Engine 5 AI")
+        q4 = query("Стажер-программист 1С","Управление временем 1С: Комплексная автоматизация 1С: Управление Торговлей 1С: Управление Производственным Предприятием ERP-системы на базе 1С Сопровождение 1с Доработка 1С 1С:УНФ")
+        os.environ['HF_HOME'] = 'E:/repos/tCash'
+    #"C# .NET Framework MS SQL HTML .NET JavaScript ООП WPF Работа с базами данных"
+        target_name_sentece = q4.get_job_name()
+        target_skills_sentece = q4.get_skills()
+        highest_similiarity = 0
+        name_sim_list = []
+        skills_sim_list = []
+        print(embeddings)
+    
+        # df = pd.DataFrame([[sim_list],[sentences]], columns=["name"])
+        result = np.multiply(name_sim_list, skills_sim_list)
+        print("result: " + str(result))
+        df = pd.DataFrame({
+            'prophecy_name': sentences,  # Генерируем 14 случайных чисел для первого столбца
+            'prophecy_name_sim': name_sim_list,  # Генерируем 14 случайных чисел для второго столбца
+            'skill_name': sentences2,
+            'skill_sim': skills_sim_list,
+            'result': result.tolist()
+    
+        })
+    
+    
+        for embeding in embeddings:
+            target_embedding = model.encode(target_name_sentece)
+            name_similiarity = util.pytorch_cos_sim(target_embedding, embeding)
+            name_sim_list.append(name_similiarity)
+            if name_similiarity > highest_similiarity:
+                highest_similiarity = name_similiarity
+        for embeding in embeddings2:
+            target_embedding = model.encode(target_skills_sentece)
+            name_similiarity = util.pytorch_cos_sim(target_embedding, embeding)
+            skills_sim_list.append(name_similiarity)
+        model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
+        emb = model.encode(sentences)
+    
+        reducer = umap.UMAP(n_neighbors=5)
+        embedding = reducer.fit_transform(np.array(emb))
+    
+        embeddings = model.encode(sentences)
+        embedding_1 = model.encode(sentences[0], convert_to_tensor=True)
+        embedding_2 = model.encode(sentences[1], convert_to_tensor=True)
+        embedding_3 = model.encode(sentences[2], convert_to_tensor=True)
+        print(util.pytorch_cos_sim(embedding_1, embedding_2))
+        print(util.pytorch_cos_sim(embedding_1, embedding_3))
+        print(embeddings)
+    
+        embeddings = model.encode(sentences2)
+        embedding_1 = model.encode(sentences2[0], convert_to_tensor=True)
+        embedding_2 = model.encode(sentences2[1], convert_to_tensor=True)
+        embedding_3 = model.encode(sentences2[2], convert_to_tensor=True)
+        print(util.pytorch_cos_sim(embedding_1, embedding_2))
+        print(util.pytorch_cos_sim(embedding_1, embedding_3))
+        print(embeddings)
+        emb = model.encode(sentences)
+        print(str(len(emb[1])))
+        print(str(len(emb[2])))
+        print(str(len(emb)))
+"""
 
-embeddings = model.encode(sentences)
-embeddings2 = model.encode(sentences2)
-embedding_1= model.encode(sentences[0], convert_to_tensor=True)
-embedding_2 = model.encode(sentences[1], convert_to_tensor=True)
-embedding_3 = model.encode(sentences[2], convert_to_tensor=True)
-embedding_Devops = model.encode(devopsText, convert_to_tensor=True)
 #print(util.pytorch_cos_sim(embedding_1, embedding_2))
 
 #print(util.pytorch_cos_sim(embedding_1, embedding_3))
-highest_similiarity = 0
-name_sim_list=[]
-skills_sim_list=[]
-print(embeddings)
-for embeding in embeddings:
-    target_embedding = model.encode(target_name_sentece)
-    name_similiarity = util.pytorch_cos_sim(target_embedding, embeding)
-    name_sim_list.append(name_similiarity)
-    if name_similiarity > highest_similiarity:
-        highest_similiarity = name_similiarity
-for embeding in embeddings2:
-    target_embedding = model.encode(target_skills_sentece)
-    name_similiarity = util.pytorch_cos_sim(target_embedding, embeding)
-    skills_sim_list.append(name_similiarity)
-#df = pd.DataFrame([[sim_list],[sentences]], columns=["name"])
-result = np.multiply(name_sim_list,skills_sim_list)
-print("result: " + str(result))
-df = pd.DataFrame({
-    'prophecy_name': sentences, # Генерируем 14 случайных чисел для первого столбца
-    'prophecy_name_sim': name_sim_list,  # Генерируем 14 случайных чисел для второго столбца
-    'skill_name': sentences2,
-    'skill_sim':skills_sim_list,
-    'result':result.tolist()
-
-})
+starttime = time.time()
+from sentence_transformers import SentenceTransformer, util
+model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
+endtime = time.time()
+print(f"model load time:{endtime - starttime}")
 def compare_sentences(s1,s2):
+
+    starttime = time.time()
     z1 =  model.encode(s1)
     z2 =  model.encode(s2)
-    return util.pytorch_cos_sim(z1, z2)
-
-
-df = df.sort_values(by=["result"],ascending=True)
-print(df.values)
-#df.values.sort(axis=1)
-print(df.head(1))
-print(name_sim_list)
-print(df.head())
-df.to_csv('example.tsv', sep='\t', index=False)
-sentences.append(target_name_sentece)
-sentences2.append(target_skills_sentece)
-#df = pd.DataFrame(similiarity, columns=[sim_list])
-embeddings = model.encode(sentences2)
-embedding_1= model.encode(sentences2[0], convert_to_tensor=True)
-embedding_2 = model.encode(sentences2[1], convert_to_tensor=True)
-embedding_3 = model.encode(sentences2[2], convert_to_tensor=True)
-print(util.pytorch_cos_sim(embedding_1, embedding_2))
-print(util.pytorch_cos_sim(embedding_1, embedding_3))
-#print(embeddings.)
+    result = util.pytorch_cos_sim(z1, z2)
+    endtime = time.time()
+    print(f"NN work time:{endtime - starttime}")
+    return result
 
 
 
 
-
-from sklearn.decomposition import PCA
-
-pca = PCA(n_components=2)
-embeddings_pca = pca.fit_transform(embeddings)
 
 
 
 # Decoration
-
-emb = model.encode(sentences)
-
-reducer = umap.UMAP(n_neighbors=5)
-embedding = reducer.fit_transform(np.array(emb))
-
-
-model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
-embeddings = model.encode(sentences)
-embedding_1= model.encode(sentences[0], convert_to_tensor=True)
-embedding_2 = model.encode(sentences[1], convert_to_tensor=True)
-embedding_3 = model.encode(sentences[2], convert_to_tensor=True)
-print(util.pytorch_cos_sim(embedding_1, embedding_2))
-print(util.pytorch_cos_sim(embedding_1, embedding_3))
-print(embeddings)
-
-embeddings = model.encode(sentences2)
-embedding_1= model.encode(sentences2[0], convert_to_tensor=True)
-embedding_2 = model.encode(sentences2[1], convert_to_tensor=True)
-embedding_3 = model.encode(sentences2[2], convert_to_tensor=True)
-print(util.pytorch_cos_sim(embedding_1, embedding_2))
-print(util.pytorch_cos_sim(embedding_1, embedding_3))
-print(embeddings)
-emb = model.encode(sentences)
-print(str(len(emb[1])))
-print(str(len(emb[2])))
-print(str(len(emb)))
 
 
 
